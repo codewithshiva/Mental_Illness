@@ -86,7 +86,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Poppins", sans-serif;
 }
 #header .logo a {
-  color: #fff;
+  color: rgb(192, 17, 17);
 }
 #header .logo a span {
   color: #e03a3c;

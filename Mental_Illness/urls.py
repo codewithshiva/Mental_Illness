@@ -21,8 +21,12 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('',views.home,name='home' ),
     path('explore',views.explore,name='explore'),
+    path('self-help',views.self_help,name='self-help'),
+    path('bloglist',views.bloglist,name='bloglist'),
     path('user',include('user.urls')),
     path('chat',include('chat.urls')),
+    
+
 ]
 admin.site.site_header="Mental_Illness Admin"
 admin.site.site_title="Mental_Illness Admin Panel"

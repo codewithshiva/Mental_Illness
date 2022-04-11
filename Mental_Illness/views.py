@@ -5,3 +5,9 @@ def home(request):
     
 def explore(request):
     return render(request,'explore.html')
+
+def self_help(request):
+    return render(request,'self-help.html')
+
+def bloglist(request):
+    return render(request,'bloglist.html')

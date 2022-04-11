@@ -15,8 +15,15 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path,include
+from . import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', include('Discussion_panel.urls')),
+    path('',views.home,name='home' ),
+    path('explore',views.explore,name='explore'),
+    path('user',include('user.urls')),
+    path('chat',include('chat.urls')),
 ]
+admin.site.site_header="Mental_Illness Admin"
+admin.site.site_title="Mental_Illness Admin Panel"
+admin.site.index_title="Welcome to Mental_Illness Admin Panel"

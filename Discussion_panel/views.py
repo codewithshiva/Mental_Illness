@@ -1,6 +1,4 @@
-from django.shortcuts import render,HttpResponse
+from django.shortcuts import redirect,render
 
-# Create your views here.
-
-def comment(request):
-     return render(request,'index.html')
+def discussion(request):
+     return render(request,'discuss.html')
